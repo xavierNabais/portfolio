@@ -126,7 +126,7 @@ function renderProjectCard(project, isCompany) {
   return `
     <article class="project-card fade-in">
       <div class="project-image">
-        <img src="${project.image}" alt="${project.title}" onerror="this.src='images/placeholder-project.svg'">
+        <img src="${project.image}" alt="${project.title}" onerror="this.onerror=null;this.src='images/placeholder-project.svg'">
         <div class="project-overlay">
           <a href="${project.url}" target="_blank" rel="noopener" class="project-link">
             <i class="fas fa-external-link-alt"></i>
