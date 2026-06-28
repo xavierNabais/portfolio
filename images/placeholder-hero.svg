@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#1a1a26" rx="20"/>
+  <circle cx="200" cy="180" r="70" fill="#2a2a3a"/>
+  <rect x="120" y="280" width="160" height="120" rx="10" fill="#2a2a3a"/>
+  <text x="200" y="440" text-anchor="middle" fill="#4f8cff" font-family="Inter, sans-serif" font-size="14">Adiciona a tua foto em /public/images/hero.jpg</text>
+</svg>
