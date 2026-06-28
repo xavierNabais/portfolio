@@ -8,14 +8,14 @@ const translations = {
     'nav.contact': 'Contacto',
     'hero.greeting': 'Olá, eu sou',
     'hero.title': 'Programador Fullstack',
-    'hero.subtitle': 'Especializado em PHP & MySQL, com experiência em desenvolvimento web completo — do backend à interface.',
+    'hero.subtitle': 'Especializado em PHP e MySQL, com experiência em desenvolvimento web completo, do backend à interface.',
     'hero.cta.projects': 'Ver Projetos',
     'hero.cta.contact': 'Contactar',
     'about.tag': 'Sobre mim',
     'about.title': 'Quem sou eu',
     'about.p1': 'Tenho 26 anos, sou de Portugal, e há dois anos que me dedico profissionalmente à programação fullstack com foco em <strong>PHP</strong> e <strong>MySQL</strong>.',
-    'about.p2': 'Sou eficiente, aprendo rápido e tenho uma forte predisposição para a tecnologia. Adoro estar a par das novidades do setor e só paro quando as coisas estão feitas — sacrifico o presente pelo futuro.',
-    'about.p3': 'Comecei a minha carreira como técnico de multimédia, o que me deu uma visão completa do digital: desde o design visual até à arquitetura de software. Hoje canalizo essa experiência no desenvolvimento web.',
+    'about.p2': 'Sou eficiente, aprendo rápido e tenho uma forte predisposição para a tecnologia. Adoro estar a par das novidades do setor e só paro quando as coisas estão feitas. Sacrifico o presente pelo futuro.',
+    'about.p3': 'Comecei a minha carreira como técnico de multimédia, o que me deu uma visão completa do digital, desde o design visual até à arquitetura de software. Hoje canalizo essa experiência no desenvolvimento web.',
     'about.stat1': 'Anos de PHP',
     'about.stat2': 'Projetos entregues',
     'about.stat3': 'Backend & Frontend',
@@ -44,7 +44,6 @@ const translations = {
     'contact.desc': 'Estou disponível para novos projetos e oportunidades. Entra em contacto!',
     'contact.email': 'Email',
     'contact.linkedin': 'Perfil profissional',
-    'contact.github': 'Repositórios & código',
     'footer.rights': 'Todos os direitos reservados.'
   },
   en: {
@@ -56,14 +55,14 @@ const translations = {
     'nav.contact': 'Contact',
     'hero.greeting': 'Hello, I am',
     'hero.title': 'Fullstack Developer',
-    'hero.subtitle': 'Specialized in PHP & MySQL, with experience in complete web development — from backend to interface.',
+    'hero.subtitle': 'Specialized in PHP and MySQL, with experience in complete web development, from backend to interface.',
     'hero.cta.projects': 'View Projects',
     'hero.cta.contact': 'Get in Touch',
     'about.tag': 'About me',
     'about.title': 'Who I am',
     'about.p1': 'I\'m 26 years old, based in Portugal, and for the past two years I\'ve been professionally dedicated to fullstack development with a focus on <strong>PHP</strong> and <strong>MySQL</strong>.',
-    'about.p2': 'I\'m efficient, a fast learner, and have a strong predisposition for technology. I love staying up to date with industry trends and I don\'t stop until things are done — I sacrifice the present for the future.',
-    'about.p3': 'I started my career as a multimedia technician, which gave me a complete view of the digital world: from visual design to software architecture. Today I channel that experience into web development.',
+    'about.p2': 'I\'m efficient, a fast learner, and have a strong predisposition for technology. I love staying up to date with industry trends and I don\'t stop until things are done. I sacrifice the present for the future.',
+    'about.p3': 'I started my career as a multimedia technician, which gave me a complete view of the digital world, from visual design to software architecture. Today I channel that experience into web development.',
     'about.stat1': 'Years of PHP',
     'about.stat2': 'Projects delivered',
     'about.stat3': 'Backend & Frontend',
@@ -92,7 +91,6 @@ const translations = {
     'contact.desc': 'I\'m available for new projects and opportunities. Get in touch!',
     'contact.email': 'Email',
     'contact.linkedin': 'Professional profile',
-    'contact.github': 'Repositories & code',
     'footer.rights': 'All rights reserved.'
   }
 };
@@ -146,7 +144,7 @@ function renderProjectCard(project, isCompany) {
 }
 
 function initSiteData() {
-  const { name, email, github, linkedin, heroImage, personalProjects, companyProjects } = siteData;
+  const { name, email, linkedin, heroImage, personalProjects, companyProjects } = siteData;
 
   document.title = `${name} | Fullstack Developer`;
   document.getElementById('heroName').textContent = name;
@@ -158,9 +156,6 @@ function initSiteData() {
 
   const totalProjects = personalProjects.length + companyProjects.length;
   document.getElementById('projectCount').textContent = `${totalProjects}+`;
-
-  const linkIds = ['navGithub', 'heroGithub', 'contactGithub', 'footerGithub'];
-  linkIds.forEach(id => { document.getElementById(id).href = github; });
 
   const linkedinIds = ['navLinkedin', 'heroLinkedin', 'contactLinkedin', 'footerLinkedin'];
   linkedinIds.forEach(id => { document.getElementById(id).href = linkedin; });

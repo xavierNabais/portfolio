@@ -595,6 +595,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   max-width: 900px;
   margin: 0 auto;
 }
+.contact-grid-duo {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 640px;
+}
 .contact-card {
   display: flex;
   flex-direction: column;
@@ -688,6 +692,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     border-bottom: 1px solid var(--border);
   }
   .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid-duo { max-width: 100%; }
   .about-stats { grid-template-columns: 1fr 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .footer-container { flex-direction: column; gap: 16px; text-align: center; }

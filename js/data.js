@@ -1,40 +1,23 @@
 const siteData = {
   name: 'Xavier Nabais',
-  email: 'xavier.nabais@email.com',
-  github: 'https://github.com/xavierNabais',
-  linkedin: 'https://linkedin.com/in/xaviernabais',
+  email: 'xaviernabais0@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/xavier-nabais',
   heroImage: 'images/hero.jpg',
 
   personalProjects: [
     {
-      title: 'Barbearia 3700',
-      description: 'Sistema completo de gestão para barbearia com agendamentos, painel admin e área de cliente.',
-      tech: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
-      image: 'images/projects/barbearia.jpg',
-      url: '#',
-      type: 'webapp'
-    },
-    {
-      title: 'Dark Resort',
-      description: 'Aplicação web interativa com lógica de negócio complexa e interface responsiva.',
-      tech: ['PHP', 'MySQL', 'JavaScript'],
-      image: 'images/projects/dark-resort.jpg',
-      url: '#',
-      type: 'webapp'
-    },
-    {
-      title: 'Boulangerie-Pâtisserie',
-      description: 'Website institucional para pastelaria com menu digital e design elegante.',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      image: 'images/projects/boulangerie.jpg',
+      title: 'Absorvlive',
+      description: 'Loja online para agência de calçado.',
+      tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+      image: 'images/projects/absorvlive.jpg',
       url: '#',
       type: 'website'
     },
     {
-      title: 'Aquário',
-      description: 'Website informativo com galeria de imagens e secções dinâmicas.',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      image: 'images/projects/aquario.jpg',
+      title: 'Clínica Fisioterapia Dr. Elsa Martins',
+      description: 'Website para clínica de fisioterapia.',
+      tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+      image: 'images/projects/elsa-martins.jpg',
       url: '#',
       type: 'website'
     }
@@ -42,19 +25,27 @@ const siteData = {
 
   companyProjects: [
     {
-      title: 'Restaurante MVP',
-      description: 'Plataforma de gestão e presença online desenvolvida no contexto profissional.',
-      tech: ['PHP', 'MySQL', 'Bootstrap'],
-      image: 'images/projects/restaurante.jpg',
-      url: '#',
+      title: 'Guru das Viagens',
+      description: 'Website de agência de viagens com reserva direta no operador.',
+      tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+      image: 'images/projects/gurudasviagens.jpg',
+      url: 'https://gurudasviagens.pt',
       company: 'Empresa'
     },
     {
-      title: 'Sistema Interno',
-      description: 'Ferramentas internas e integrações para otimizar processos empresariais.',
-      tech: ['PHP', 'MySQL', 'Docker'],
-      image: 'images/projects/sistema.jpg',
-      url: '#',
+      title: 'Fama Low Cost',
+      description: 'Website de agência de viagens com reserva direta no operador.',
+      tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+      image: 'images/projects/famalowcost.jpg',
+      url: 'https://famalowcost.com',
+      company: 'Empresa'
+    },
+    {
+      title: 'Viaja Fácil',
+      description: 'Website de agência de viagens com reserva direta no operador.',
+      tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+      image: 'images/projects/viajafacil.jpg',
+      url: 'https://viajafacil.pt',
       company: 'Empresa'
     }
   ]
