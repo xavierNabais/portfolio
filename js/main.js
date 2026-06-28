@@ -39,6 +39,7 @@ const translations = {
     'projects.title': 'Projetos',
     'projects.tab.personal': 'Projetos Pessoais',
     'projects.tab.company': 'Projetos Empresa',
+    'projects.company.note': 'Os projetos aqui foram desenvolvidos em contexto de empresa.',
     'contact.tag': 'Contacto',
     'contact.title': 'Vamos trabalhar juntos',
     'contact.desc': 'Estou disponível para novos projetos e oportunidades. Entra em contacto!',
@@ -86,6 +87,7 @@ const translations = {
     'projects.title': 'Projects',
     'projects.tab.personal': 'Personal Projects',
     'projects.tab.company': 'Company Projects',
+    'projects.company.note': 'The projects here were developed in a company context.',
     'contact.tag': 'Contact',
     'contact.title': 'Let\'s work together',
     'contact.desc': 'I\'m available for new projects and opportunities. Get in touch!',
@@ -115,11 +117,14 @@ function setLanguage(lang) {
 }
 
 function renderProjectCard(project, isCompany) {
-  const typeLabel = isCompany
-    ? project.company
-    : (project.type === 'webapp' ? 'Web App' : 'Website');
+  const typeLabel = project.type === 'webapp' ? 'Web App' : 'Website';
+  const employer = siteData.employer;
 
-  const typeClass = isCompany ? 'project-type project-type-company' : 'project-type';
+  const companyBadge = isCompany ? `
+    <a href="${employer.url}" target="_blank" rel="noopener" class="project-company" title="${employer.name}">
+      <img src="${employer.logo}" alt="${employer.name}">
+    </a>
+  ` : `<span class="project-type">${typeLabel}</span>`;
 
   const techTags = project.tech.map(t => `<span class="tech-tag">${t}</span>`).join('');
 
@@ -134,7 +139,7 @@ function renderProjectCard(project, isCompany) {
         </div>
       </div>
       <div class="project-info">
-        <span class="${typeClass}">${typeLabel}</span>
+        ${companyBadge}
         <h3>${project.title}</h3>
         <p>${project.description}</p>
         <div class="project-tech">${techTags}</div>

@@ -4,6 +4,12 @@ const siteData = {
   linkedin: 'https://www.linkedin.com/in/xavier-nabais',
   heroImage: 'images/hero.jpg',
 
+  employer: {
+    name: 'Livetech',
+    logo: 'images/projects/logotipo_livetech.svg',
+    url: 'https://www.livetech.pt/pt/'
+  },
+
   personalProjects: [
     {
       title: 'Absorvlive',
@@ -29,24 +35,21 @@ const siteData = {
       description: 'Website de agência de viagens com reserva direta no operador.',
       tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
       image: 'images/projects/gurudasviagens.jpg',
-      url: 'https://gurudasviagens.pt',
-      company: 'Empresa'
+      url: 'https://gurudasviagens.pt'
     },
     {
       title: 'Fama Low Cost',
       description: 'Website de agência de viagens com reserva direta no operador.',
       tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
       image: 'images/projects/famalowcost.jpg',
-      url: 'https://famalowcost.com',
-      company: 'Empresa'
+      url: 'https://famalowcost.com'
     },
     {
       title: 'Viaja Fácil',
       description: 'Website de agência de viagens com reserva direta no operador.',
       tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
       image: 'images/projects/viajafacil.jpg',
-      url: 'https://viajafacil.pt',
-      company: 'Empresa'
+      url: 'https://viajafacil.pt'
     }
   ]
 };
