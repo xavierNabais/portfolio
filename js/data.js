@@ -1,7 +1,7 @@
 const siteData = {
-  siteUrl: 'https://xaviernabais.github.io/portfolio/',
+  siteUrl: 'https://www.xaviernabais.pt/',
   name: 'Xavier Nabais',
-  email: 'xaviernabais0@gmail.com',
+  email: 'admin@xaviernabais.pt',
   whatsapp: '351915346913',
   linkedin: 'https://www.linkedin.com/in/xavier-nabais',
   heroImage: 'images/hero.jpg',
