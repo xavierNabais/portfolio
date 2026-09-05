@@ -3,254 +3,282 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Xavier Nabais, Programador Fullstack PHP. Portfolio de projetos web pessoais e profissionais.">
-  <title>Xavier Nabais | Fullstack Developer</title>
+  <meta name="description" content="Xavier Nabais, São João da Madeira. Websites profissionais para PMEs em Portugal. A partir de 500€. Entrega em 7 dias. Pedido de proposta grátis.">
+  <title>Xavier Nabais | Websites que trazem clientes</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:site_name" content="Xavier Nabais">
+  <meta property="og:url" content="https://xaviernabais.github.io/portfolio/">
+  <meta property="og:title" content="Xavier Nabais | Websites que trazem clientes">
+  <meta property="og:description" content="Websites profissionais para PMEs em Portugal. A partir de 500€. Entrega em 7 dias. Pedido de proposta grátis por email ou WhatsApp.">
+  <meta property="og:image" content="https://xaviernabais.github.io/portfolio/images/hero.jpg">
+  <meta property="og:image:alt" content="Xavier Nabais">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Xavier Nabais | Websites que trazem clientes">
+  <meta name="twitter:description" content="Websites profissionais para PMEs em Portugal. A partir de 500€. Entrega em 7 dias.">
+  <meta name="twitter:image" content="https://xaviernabais.github.io/portfolio/images/hero.jpg">
+
+  <link rel="canonical" href="https://xaviernabais.github.io/portfolio/">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#contact" data-i18n="a11y.skip">Saltar para pedido de proposta</a>
+
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#home" class="nav-logo">&lt;XN /&gt;</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <a href="#home" class="nav-logo">Xavier Nabais</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-menu" id="navMenu">
         <li><a href="#home" class="nav-link" data-i18n="nav.home">Início</a></li>
-        <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a></li>
-        <li><a href="#services" class="nav-link" data-i18n="nav.services">Serviços</a></li>
-        <li><a href="#stack" class="nav-link" data-i18n="nav.stack">Stack</a></li>
-        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#value" class="nav-link" data-i18n="nav.value">Vantagens</a></li>
+        <li><a href="#process" class="nav-link" data-i18n="nav.process">Como trabalho</a></li>
+        <li><a href="#cases" class="nav-link" data-i18n="nav.cases">Trabalhos</a></li>
         <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
       </ul>
       <div class="nav-actions">
-        <div class="lang-toggle">
-          <button class="lang-btn active" data-lang="pt">PT</button>
-          <button class="lang-btn" data-lang="en">EN</button>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn active" data-lang="pt">PT</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
         </div>
-        <div class="nav-social">
-          <a href="#" id="navLinkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
+        <a href="#contact" class="btn btn-nav" data-i18n="nav.cta">Pedir proposta</a>
       </div>
     </div>
   </nav>
 
   <main>
-    <!-- Hero -->
     <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-container">
         <div class="hero-content">
-          <p class="hero-greeting" data-i18n="hero.greeting">Olá, eu sou</p>
-          <h1 class="hero-name" id="heroName">Xavier Nabais</h1>
-          <h2 class="hero-title">
-            <span class="typed-text" data-i18n="hero.title">Programador Fullstack</span>
-            <span class="cursor">|</span>
-          </h2>
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">Websites para PMEs</p>
+          <h1 class="hero-title" data-i18n="hero.title">O seu negócio merece um site que traz clientes, não só uma página na internet</h1>
           <p class="hero-subtitle" data-i18n="hero.subtitle">
-            Especializado em PHP e MySQL, com experiência em desenvolvimento web completo, do backend à interface.
+            Ajudo PMEs a terem um site profissional que gera contactos: claro, rápido e feito para o telemóvel.
           </p>
           <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.projects">Ver Projetos</a>
-            <a href="#contact" class="btn btn-outline" data-i18n="hero.cta.contact">Contactar</a>
+            <a href="#contact" class="btn btn-primary" data-i18n="hero.cta.primary">Pedir proposta grátis</a>
+            <a href="#cases" class="btn btn-secondary" data-i18n="hero.cta.secondary">Ver trabalhos</a>
           </div>
-          <div class="hero-social">
-            <a href="#" id="heroLinkedin" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+          <ul class="hero-trust" aria-label="Garantias">
+            <li data-i18n="hero.trust1">Entrega em 7 dias</li>
+            <li data-i18n="hero.trust2">Sem chamada obrigatória</li>
+            <li data-i18n="hero.trust3">Resposta em 24h</li>
+          </ul>
         </div>
-        <div class="hero-image">
-          <div class="hero-image-wrapper">
-            <img id="heroImage" src="images/hero.jpg" alt="Xavier Nabais" onerror="this.onerror=null;this.src='images/placeholder-hero.svg'">
-            <div class="hero-image-glow"></div>
+        <div class="hero-media">
+          <div class="hero-photo">
+            <img id="heroImage" src="images/hero.jpg" alt="Xavier Nabais" width="480" height="600" onerror="this.onerror=null;this.src='images/placeholder-hero.svg'">
+            <div class="hero-badges">
+              <div class="hero-location" aria-label="Localização">
+                <span class="hero-flag" title="Portugal" aria-hidden="true">
+                  <svg viewBox="0 0 60 40" width="22" height="15" focusable="false">
+                    <rect width="60" height="40" fill="#D21034"/>
+                    <rect width="24" height="40" fill="#006600"/>
+                    <circle cx="24" cy="20" r="7.5" fill="#FFCC00"/>
+                    <circle cx="24" cy="20" r="4.5" fill="#D21034"/>
+                  </svg>
+                </span>
+                <span class="hero-pin" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" focusable="false">
+                    <path d="M12 22s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z" fill="currentColor"/>
+                    <circle cx="12" cy="10" r="2.5" fill="#fff"/>
+                  </svg>
+                </span>
+                <span data-i18n="hero.location">São João da Madeira</span>
+              </div>
+              <div class="hero-exp" aria-label="Experiência">
+                <span data-i18n="hero.exp">+10 anos de experiência</span>
+              </div>
+            </div>
           </div>
+          <aside class="hero-note">
+            <p class="hero-note-label" data-i18n="hero.noteLabel">Para quem?</p>
+            <p class="hero-note-text" data-i18n="hero.noteText">Negócios locais e PMEs: restauração, clínicas, serviços, consultoria, construção e comércio.</p>
+          </aside>
         </div>
-      </div>
-      <div class="hero-scroll">
-        <a href="#about" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="section about" id="about">
+    <section class="trust-bar" aria-label="Prova social">
+      <div class="container trust-bar-inner">
+        <p class="trust-bar-label" data-i18n="trust.label">Alguns projetos em que trabalhei</p>
+        <div class="trust-bar-items" id="trustLogos"></div>
+      </div>
+    </section>
+
+    <section class="section value" id="value">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="about.tag">Sobre mim</span>
-          <h2 class="section-title" data-i18n="about.title">Quem sou eu</h2>
+          <p class="section-tag" data-i18n="value.tag">Porquê um site novo</p>
+          <h2 class="section-title" data-i18n="value.title">O site da sua empresa deve trabalhar por si quando não pode atender o telemóvel</h2>
+          <p class="section-desc" data-i18n="value.desc">As pessoas decidem em segundos. Se o site parece antigo ou confuso, passam à frente.</p>
         </div>
-        <div class="about-grid">
-          <div class="about-text">
-            <p data-i18n="about.p1">
-              Tenho 26 anos, sou de Portugal, e há dois anos que me dedico profissionalmente à programação fullstack com foco em <strong>PHP</strong> e <strong>MySQL</strong>.
-            </p>
-            <p data-i18n="about.p2">
-              Sou eficiente, aprendo rápido e tenho uma forte predisposição para a tecnologia. Adoro estar a par das novidades do setor e só paro quando as coisas estão feitas. Sacrifico o presente pelo futuro.
-            </p>
-            <p data-i18n="about.p3">
-              Comecei a minha carreira como técnico de multimédia, o que me deu uma visão completa do digital, desde o design visual até à arquitetura de software. Hoje canalizo essa experiência no desenvolvimento web.
-            </p>
-          </div>
-          <div class="about-stats">
-            <div class="stat-card">
-              <span class="stat-number">2+</span>
-              <span class="stat-label" data-i18n="about.stat1">Anos de PHP</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number" id="projectCount">6+</span>
-              <span class="stat-label" data-i18n="about.stat2">Projetos entregues</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">Fullstack</span>
-              <span class="stat-label" data-i18n="about.stat3">Backend &amp; Frontend</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">Portugal</span>
-              <span class="stat-label" data-i18n="about.stat4">Baseado em</span>
-            </div>
-          </div>
+        <div class="value-grid">
+          <article class="value-item">
+            <span class="value-num">01</span>
+            <h3 data-i18n="value.v1.title">Mais contactos e pedidos</h3>
+            <p data-i18n="value.v1.desc">Botões claros, WhatsApp e formulários no sítio certo, para o visitante pedir orçamento sem adivinhar o que fazer.</p>
+          </article>
+          <article class="value-item">
+            <span class="value-num">02</span>
+            <h3 data-i18n="value.v2.title">Imagem que transmite confiança</h3>
+            <p data-i18n="value.v2.desc">Um site limpo e profissional faz a sua empresa parecer maior e mais fiável, ainda antes de falar com o cliente.</p>
+          </article>
+          <article class="value-item">
+            <span class="value-num">03</span>
+            <h3 data-i18n="value.v3.title">Rápido no telemóvel</h3>
+            <p data-i18n="value.v3.desc">A maioria decide no telemóvel. O site carrega depressa, lê-se bem e funciona sem complicações.</p>
+          </article>
+          <article class="value-item">
+            <span class="value-num">04</span>
+            <h3 data-i18n="value.v4.title">Entrega em 7 dias</h3>
+            <p data-i18n="value.v4.desc">Processo simples e prazos claros. Em 7 dias tem a primeira versão pronta para rever, sem ficar meses à espera.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="section services" id="services">
+    <section class="section process" id="process">
       <div class="container">
         <div class="section-header center">
-          <span class="section-tag" data-i18n="services.tag">O que faço</span>
-          <h2 class="section-title" data-i18n="services.title">Serviços</h2>
+          <p class="section-tag" data-i18n="process.tag">Como trabalho</p>
+          <h2 class="section-title" data-i18n="process.title">4 passos. Sem jargão. Sem surpresas.</h2>
+          <p class="section-desc" data-i18n="process.desc">Sabe sempre em que fase está e o que acontece a seguir.</p>
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-server"></i></div>
-            <h3 data-i18n="services.s1.title">Backend &amp; APIs</h3>
-            <p data-i18n="services.s1.desc">Desenvolvimento de lógica de negócio, APIs REST, bases de dados MySQL e arquitetura server-side com PHP.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-            <h3 data-i18n="services.s2.title">Frontend &amp; UI</h3>
-            <p data-i18n="services.s2.desc">Interfaces responsivas e modernas com HTML, CSS, JavaScript e frameworks como Bootstrap, React e Vue.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon"><i class="fas fa-layer-group"></i></div>
-            <h3 data-i18n="services.s3.title">Aplicações Web</h3>
-            <p data-i18n="services.s3.desc">Sistemas completos de gestão, painéis administrativos, plataformas com autenticação e fluxos complexos.</p>
-          </div>
+        <ol class="process-list">
+          <li class="process-step">
+            <span class="process-step-num">1</span>
+            <div>
+              <h3 data-i18n="process.s1.title">Diagnóstico rápido</h3>
+              <p data-i18n="process.s1.desc">Explica-me o negócio, o objetivo e o que falta no site atual (ou se ainda não tem site).</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-step-num">2</span>
+            <div>
+              <h3 data-i18n="process.s2.title">Proposta clara</h3>
+              <p data-i18n="process.s2.desc">Recebe âmbito, prazo e investimento por email ou WhatsApp, sem pressão.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-step-num">3</span>
+            <div>
+              <h3 data-i18n="process.s3.title">Design e construção</h3>
+              <p data-i18n="process.s3.desc">Em 7 dias entrego a primeira versão. Depois ajustamos juntos o que precisa de mudar.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-step-num">4</span>
+            <div>
+              <h3 data-i18n="process.s4.title">Lançamento</h3>
+              <p data-i18n="process.s4.desc">O site fica online, rápido e pronto a receber pedidos de clientes.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="process-cta">
+          <a href="#contact" class="btn btn-primary" data-i18n="process.cta">Pedir a minha proposta</a>
         </div>
       </div>
     </section>
 
-    <!-- Tech Stack -->
-    <section class="section stack" id="stack">
+    <section class="section cases" id="cases">
       <div class="container">
         <div class="section-header center">
-          <span class="section-tag" data-i18n="stack.tag">Tecnologias</span>
-          <h2 class="section-title" data-i18n="stack.title">Stack &amp; Ferramentas</h2>
+          <p class="section-tag" data-i18n="cases.tag">Trabalhos</p>
+          <h2 class="section-title" data-i18n="cases.title">Sites feitos para negócios reais, não para impressionar programadores</h2>
+          <p class="section-desc" data-i18n="cases.desc">Cada projeto abaixo resolveu uma necessidade concreta: confiança, contacto ou vendas.</p>
         </div>
-
-        <div class="stack-category">
-          <h3 class="stack-category-title" data-i18n="stack.backend">Backend &amp; Base de Dados</h3>
-          <div class="stack-grid">
-            <div class="stack-item" title="PHP"><i class="fab fa-php"></i><span>PHP</span></div>
-            <div class="stack-item" title="MySQL"><i class="fas fa-database"></i><span>MySQL</span></div>
-            <div class="stack-item" title="Docker"><i class="fab fa-docker"></i><span>Docker</span></div>
-            <div class="stack-item" title="Composer"><i class="fas fa-box"></i><span>Composer</span></div>
-          </div>
-        </div>
-
-        <div class="stack-category">
-          <h3 class="stack-category-title" data-i18n="stack.frontend">Frontend</h3>
-          <div class="stack-grid">
-            <div class="stack-item" title="HTML5"><i class="fab fa-html5"></i><span>HTML5</span></div>
-            <div class="stack-item" title="CSS3"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-            <div class="stack-item" title="JavaScript"><i class="fab fa-js"></i><span>JavaScript</span></div>
-            <div class="stack-item" title="TypeScript"><i class="fas fa-code"></i><span>TypeScript</span></div>
-            <div class="stack-item" title="Bootstrap"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
-            <div class="stack-item" title="React"><i class="fab fa-react"></i><span>React</span></div>
-            <div class="stack-item" title="Vue"><i class="fab fa-vuejs"></i><span>Vue</span></div>
-          </div>
-        </div>
-
-        <div class="stack-category">
-          <h3 class="stack-category-title" data-i18n="stack.tools">Ferramentas</h3>
-          <div class="stack-grid">
-            <div class="stack-item" title="Git"><i class="fab fa-git-alt"></i><span>Git</span></div>
-            <div class="stack-item" title="VS Code"><i class="fas fa-terminal"></i><span>VS Code</span></div>
-            <div class="stack-item" title="NPM"><i class="fab fa-npm"></i><span>NPM</span></div>
-            <div class="stack-item" title="Postman"><i class="fas fa-paper-plane"></i><span>Postman</span></div>
-          </div>
-        </div>
-
-        <div class="stack-category stack-secondary">
-          <h3 class="stack-category-title" data-i18n="stack.multimedia">Multimédia <span class="stack-badge" data-i18n="stack.bonus">bónus</span></h3>
-          <div class="stack-grid">
-            <div class="stack-item stack-item-sm" title="Photoshop"><i class="fas fa-image"></i><span>Photoshop</span></div>
-            <div class="stack-item stack-item-sm" title="Premiere"><i class="fas fa-film"></i><span>Premiere</span></div>
-            <div class="stack-item stack-item-sm" title="After Effects"><i class="fas fa-video"></i><span>After Effects</span></div>
-            <div class="stack-item stack-item-sm" title="Blender"><i class="fas fa-cube"></i><span>Blender</span></div>
-          </div>
-        </div>
+        <div class="cases-grid" id="casesGrid"></div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section-header center">
-          <span class="section-tag" data-i18n="projects.tag">Portfolio</span>
-          <h2 class="section-title" data-i18n="projects.title">Projetos</h2>
-        </div>
-
-        <div class="projects-tabs">
-          <button class="tab-btn active" data-tab="personal" data-i18n="projects.tab.personal">Projetos Pessoais</button>
-          <button class="tab-btn" data-tab="company" data-i18n="projects.tab.company">Projetos Empresa</button>
-        </div>
-
-        <div class="projects-panel active" id="tab-personal">
-          <div class="projects-grid" id="personalProjects"></div>
-        </div>
-
-        <div class="projects-panel" id="tab-company">
-          <p class="company-note" data-i18n="projects.company.note">Os projetos aqui foram desenvolvidos em contexto de empresa.</p>
-          <div class="projects-grid" id="companyProjects"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
     <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section-header center">
-          <span class="section-tag" data-i18n="contact.tag">Contacto</span>
-          <h2 class="section-title" data-i18n="contact.title">Vamos trabalhar juntos</h2>
-          <p class="section-desc" data-i18n="contact.desc">Estou disponível para novos projetos e oportunidades. Entra em contacto!</p>
+      <div class="container contact-wrap">
+        <div class="contact-intro">
+          <p class="section-tag" data-i18n="contact.tag">Proposta grátis</p>
+          <h2 class="section-title" data-i18n="contact.title">Conte-me o seu negócio. Eu respondo com uma proposta.</h2>
+          <p class="section-desc left" data-i18n="contact.desc">Sem chamada telefónica obrigatória. Prefere email ou WhatsApp? Eu adapto-me.</p>
+          <ul class="contact-points">
+            <li data-i18n="contact.point1">Resposta em regra em 24 horas</li>
+            <li data-i18n="contact.point2">Primeira versão do site em 7 dias</li>
+            <li data-i18n="contact.point3">A partir de 500€ para sites de apresentação</li>
+            <li data-i18n="contact.point4">Sem compromisso ao pedir proposta</li>
+          </ul>
+          <div class="contact-alt">
+            <a href="#" id="contactEmail" class="contact-alt-link">
+              <span data-i18n="contact.emailLabel">Email</span>
+              <strong id="contactEmailText">xaviernabais0@gmail.com</strong>
+            </a>
+            <a href="#" id="contactWhatsapp" class="contact-alt-link contact-whatsapp is-hidden">
+              <span>WhatsApp</span>
+              <strong data-i18n="contact.whatsappCta">Abrir conversa</strong>
+            </a>
+          </div>
         </div>
-        <div class="contact-grid contact-grid-duo">
-          <a href="#" id="contactEmail" class="contact-card">
-            <i class="fas fa-envelope"></i>
-            <span data-i18n="contact.email">Email</span>
-            <p id="contactEmailText">xaviernabais0@gmail.com</p>
-          </a>
-          <a href="#" id="contactLinkedin" target="_blank" rel="noopener" class="contact-card">
-            <i class="fab fa-linkedin-in"></i>
-            <span>LinkedIn</span>
-            <p data-i18n="contact.linkedin">Perfil profissional</p>
-          </a>
-        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name" data-i18n="form.name">Nome</label>
+            <input type="text" id="name" name="name" autocomplete="name" required data-i18n-placeholder="form.namePh" placeholder="O seu nome">
+          </div>
+          <div class="form-row">
+            <label for="company" data-i18n="form.company">Empresa</label>
+            <input type="text" id="company" name="company" autocomplete="organization" required data-i18n-placeholder="form.companyPh" placeholder="Nome da empresa">
+          </div>
+          <div class="form-row">
+            <label for="channel" data-i18n="form.channel">Email ou WhatsApp</label>
+            <input type="text" id="channel" name="channel" autocomplete="email" required data-i18n-placeholder="form.channelPh" placeholder="email@empresa.pt ou 912 345 678">
+          </div>
+          <div class="form-row">
+            <label for="message" data-i18n="form.message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" required data-i18n-placeholder="form.messagePh" placeholder="De que precisa? Por exemplo: site novo, renovar o atual, loja online..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">Pedir proposta grátis</button>
+          <p class="form-note" data-i18n="form.note">O pedido é enviado diretamente para o meu email. Se preferir, pode também usar o WhatsApp. Ao enviar, aceita a <a href="privacidade.html">Política de Privacidade</a>.</p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-container">
-      <p>&copy; <span id="footerYear"></span> <span id="footerName">Xavier Nabais</span>. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
-      <div class="footer-social">
-        <a href="#" id="footerLinkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <div class="footer-brand">
+        <strong id="footerName">Xavier Nabais</strong>
+        <p data-i18n="footer.tagline">Websites para PMEs. São João da Madeira, Portugal.</p>
+      </div>
+      <p class="footer-copy">&copy; <span id="footerYear"></span> Xavier Nabais. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+      <div class="footer-links">
+        <a href="privacidade.html" data-i18n="footer.privacy">Política de Privacidade</a>
+        <a href="termos.html" data-i18n="footer.terms">Termos e Condições</a>
+        <a href="#" id="footerLinkedin" class="footer-link" target="_blank" rel="noopener" data-i18n="footer.linkedin">LinkedIn</a>
       </div>
     </div>
   </footer>
+
+  <div class="mobile-cta" id="mobileCta">
+    <a href="#contact" class="btn btn-primary btn-block" data-i18n="mobile.cta">Pedir proposta grátis</a>
+  </div>
+
+  <div class="cookie-banner is-hidden" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookies">
+    <p data-i18n="cookies.text">Este site guarda a preferência de idioma no seu dispositivo e pode carregar fontes da Google. Ao continuar, aceita esta utilização. Saiba mais na <a href="privacidade.html">Política de Privacidade</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" class="btn btn-primary" id="cookieAccept" data-i18n="cookies.accept">Compreendi</button>
+      <a href="privacidade.html" class="btn btn-secondary" data-i18n="cookies.more">Ver privacidade</a>
+    </div>
+  </div>
 
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>

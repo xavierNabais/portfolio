@@ -1,235 +1,456 @@
 const translations = {
   pt: {
+    'a11y.skip': 'Saltar para pedido de proposta',
     'nav.home': 'Início',
-    'nav.about': 'Sobre',
-    'nav.services': 'Serviços',
-    'nav.stack': 'Stack',
-    'nav.projects': 'Projetos',
+    'nav.value': 'Vantagens',
+    'nav.process': 'Como trabalho',
+    'nav.cases': 'Trabalhos',
     'nav.contact': 'Contacto',
-    'hero.greeting': 'Olá, eu sou',
-    'hero.title': 'Programador Fullstack',
-    'hero.subtitle': 'Especializado em PHP e MySQL, com experiência em desenvolvimento web completo, do backend à interface.',
-    'hero.cta.projects': 'Ver Projetos',
-    'hero.cta.contact': 'Contactar',
-    'about.tag': 'Sobre mim',
-    'about.title': 'Quem sou eu',
-    'about.p1': 'Tenho 26 anos, sou de Portugal, e há dois anos que me dedico profissionalmente à programação fullstack com foco em <strong>PHP</strong> e <strong>MySQL</strong>.',
-    'about.p2': 'Sou eficiente, aprendo rápido e tenho uma forte predisposição para a tecnologia. Adoro estar a par das novidades do setor e só paro quando as coisas estão feitas. Sacrifico o presente pelo futuro.',
-    'about.p3': 'Comecei a minha carreira como técnico de multimédia, o que me deu uma visão completa do digital, desde o design visual até à arquitetura de software. Hoje canalizo essa experiência no desenvolvimento web.',
-    'about.stat1': 'Anos de PHP',
-    'about.stat2': 'Projetos entregues',
-    'about.stat3': 'Backend & Frontend',
-    'about.stat4': 'Baseado em',
-    'services.tag': 'O que faço',
-    'services.title': 'Serviços',
-    'services.s1.title': 'Backend & APIs',
-    'services.s1.desc': 'Desenvolvimento de lógica de negócio, APIs REST, bases de dados MySQL e arquitetura server-side com PHP.',
-    'services.s2.title': 'Frontend & UI',
-    'services.s2.desc': 'Interfaces responsivas e modernas com HTML, CSS, JavaScript e frameworks como Bootstrap, React e Vue.',
-    'services.s3.title': 'Aplicações Web',
-    'services.s3.desc': 'Sistemas completos de gestão, painéis administrativos, plataformas com autenticação e fluxos complexos.',
-    'stack.tag': 'Tecnologias',
-    'stack.title': 'Stack & Ferramentas',
-    'stack.backend': 'Backend & Base de Dados',
-    'stack.frontend': 'Frontend',
-    'stack.tools': 'Ferramentas',
-    'stack.multimedia': 'Multimédia',
-    'stack.bonus': 'bónus',
-    'projects.tag': 'Portfolio',
-    'projects.title': 'Projetos',
-    'projects.tab.personal': 'Projetos Pessoais',
-    'projects.tab.company': 'Projetos Empresa',
-    'projects.company.note': 'Os projetos aqui foram desenvolvidos em contexto de empresa.',
-    'contact.tag': 'Contacto',
-    'contact.title': 'Vamos trabalhar juntos',
-    'contact.desc': 'Estou disponível para novos projetos e oportunidades. Entra em contacto!',
-    'contact.email': 'Email',
-    'contact.linkedin': 'Perfil profissional',
-    'footer.rights': 'Todos os direitos reservados.'
+    'nav.cta': 'Pedir proposta',
+    'hero.eyebrow': 'Websites para PMEs',
+    'hero.title': 'O seu negócio merece um site que traz clientes, não só uma página na internet',
+    'hero.subtitle': 'Ajudo PMEs a terem um site profissional que gera contactos: claro, rápido e feito para o telemóvel.',
+    'hero.cta.primary': 'Pedir proposta grátis',
+    'hero.cta.secondary': 'Ver trabalhos',
+    'hero.trust1': 'Entrega em 7 dias',
+    'hero.trust2': 'Sem chamada obrigatória',
+    'hero.trust3': 'Resposta em 24h',
+    'hero.location': 'São João da Madeira',
+    'hero.exp': '+10 anos de experiência',
+    'hero.noteLabel': 'Para quem?',
+    'hero.noteText': 'Negócios locais e PMEs: restauração, clínicas, serviços, consultoria, construção e comércio.',
+    'trust.label': 'Alguns projetos em que trabalhei',
+    'value.tag': 'Porquê um site novo',
+    'value.title': 'O site da sua empresa deve trabalhar por si quando não pode atender o telemóvel',
+    'value.desc': 'As pessoas decidem em segundos. Se o site parece antigo ou confuso, passam à frente.',
+    'value.v1.title': 'Mais contactos e pedidos',
+    'value.v1.desc': 'Botões claros, WhatsApp e formulários no sítio certo, para o visitante pedir orçamento sem adivinhar o que fazer.',
+    'value.v2.title': 'Imagem que transmite confiança',
+    'value.v2.desc': 'Um site limpo e profissional faz a sua empresa parecer maior e mais fiável, ainda antes de falar com o cliente.',
+    'value.v3.title': 'Rápido no telemóvel',
+    'value.v3.desc': 'A maioria decide no telemóvel. O site carrega depressa, lê-se bem e funciona sem complicações.',
+    'value.v4.title': 'Entrega em 7 dias',
+    'value.v4.desc': 'Processo simples e prazos claros. Em 7 dias tem a primeira versão pronta para rever, sem ficar meses à espera.',
+    'process.tag': 'Como trabalho',
+    'process.title': '4 passos. Sem jargão. Sem surpresas.',
+    'process.desc': 'Sabe sempre em que fase está e o que acontece a seguir.',
+    'process.s1.title': 'Diagnóstico rápido',
+    'process.s1.desc': 'Explica-me o negócio, o objetivo e o que falta no site atual (ou se ainda não tem site).',
+    'process.s2.title': 'Proposta clara',
+    'process.s2.desc': 'Recebe âmbito, prazo e investimento por email ou WhatsApp, sem pressão.',
+    'process.s3.title': 'Design e construção',
+    'process.s3.desc': 'Em 7 dias entrego a primeira versão. Depois ajustamos juntos o que precisa de mudar.',
+    'process.s4.title': 'Lançamento',
+    'process.s4.desc': 'O site fica online, rápido e pronto a receber pedidos de clientes.',
+    'process.cta': 'Pedir a minha proposta',
+    'cases.tag': 'Trabalhos',
+    'cases.title': 'Sites feitos para negócios reais, não para impressionar programadores',
+    'cases.desc': 'Cada projeto abaixo resolveu uma necessidade concreta: confiança, contacto ou vendas.',
+    'cases.problem': 'O desafio',
+    'cases.outcome': 'O que foi feito',
+    'cases.result': 'Em resumo',
+    'cases.view': 'Ver site',
+    'cases.with': 'Com',
+    'contact.tag': 'Proposta grátis',
+    'contact.title': 'Conte-me o seu negócio. Eu respondo com uma proposta.',
+    'contact.desc': 'Sem chamada telefónica obrigatória. Prefere email ou WhatsApp? Eu adapto-me.',
+    'contact.point1': 'Resposta em regra em 24 horas',
+    'contact.point2': 'Primeira versão do site em 7 dias',
+    'contact.point3': 'A partir de 500€ para sites de apresentação',
+    'contact.point4': 'Sem compromisso ao pedir proposta',
+    'contact.emailLabel': 'Email',
+    'contact.whatsappCta': 'Abrir conversa',
+    'form.name': 'Nome',
+    'form.company': 'Empresa',
+    'form.channel': 'Email ou WhatsApp',
+    'form.message': 'Mensagem',
+    'form.namePh': 'O seu nome',
+    'form.companyPh': 'Nome da empresa',
+    'form.channelPh': 'email@empresa.pt ou 912 345 678',
+    'form.messagePh': 'De que precisa? Por exemplo: site novo, renovar o atual, loja online...',
+    'form.submit': 'Pedir proposta grátis',
+    'form.sending': 'A enviar...',
+    'form.note': 'O pedido é enviado diretamente para o meu email. Se preferir, pode também usar o WhatsApp. Ao enviar, aceita a <a href="privacidade.html">Política de Privacidade</a>.',
+    'form.success': 'Pedido enviado. Respondo em regra em 24 horas.',
+    'form.error': 'Preencha todos os campos para continuar.',
+    'form.errorSend': 'Não foi possível enviar agora. Use o WhatsApp ou o email direto.',
+    'cookies.text': 'Este site guarda a preferência de idioma no seu dispositivo e pode carregar fontes da Google. Ao continuar, aceita esta utilização. Saiba mais na <a href="privacidade.html">Política de Privacidade</a>.',
+    'cookies.accept': 'Compreendi',
+    'cookies.more': 'Ver privacidade',
+    'mobile.cta': 'Pedir proposta grátis',
+    'footer.tagline': 'Websites para PMEs. São João da Madeira, Portugal.',
+    'footer.rights': 'Todos os direitos reservados.',
+    'footer.privacy': 'Política de Privacidade',
+    'footer.terms': 'Termos e Condições',
+    'footer.linkedin': 'LinkedIn',
+    'doc.title': 'Xavier Nabais | Websites que trazem clientes',
+    'doc.description': 'Xavier Nabais, São João da Madeira. Websites profissionais para PMEs em Portugal. A partir de 500€. Entrega em 7 dias. Pedido de proposta grátis.'
   },
   en: {
+    'a11y.skip': 'Skip to proposal request',
     'nav.home': 'Home',
-    'nav.about': 'About',
-    'nav.services': 'Services',
-    'nav.stack': 'Stack',
-    'nav.projects': 'Projects',
+    'nav.value': 'Benefits',
+    'nav.process': 'How I work',
+    'nav.cases': 'Work',
     'nav.contact': 'Contact',
-    'hero.greeting': 'Hello, I am',
-    'hero.title': 'Fullstack Developer',
-    'hero.subtitle': 'Specialized in PHP and MySQL, with experience in complete web development, from backend to interface.',
-    'hero.cta.projects': 'View Projects',
-    'hero.cta.contact': 'Get in Touch',
-    'about.tag': 'About me',
-    'about.title': 'Who I am',
-    'about.p1': 'I\'m 26 years old, based in Portugal, and for the past two years I\'ve been professionally dedicated to fullstack development with a focus on <strong>PHP</strong> and <strong>MySQL</strong>.',
-    'about.p2': 'I\'m efficient, a fast learner, and have a strong predisposition for technology. I love staying up to date with industry trends and I don\'t stop until things are done. I sacrifice the present for the future.',
-    'about.p3': 'I started my career as a multimedia technician, which gave me a complete view of the digital world, from visual design to software architecture. Today I channel that experience into web development.',
-    'about.stat1': 'Years of PHP',
-    'about.stat2': 'Projects delivered',
-    'about.stat3': 'Backend & Frontend',
-    'about.stat4': 'Based in',
-    'services.tag': 'What I do',
-    'services.title': 'Services',
-    'services.s1.title': 'Backend & APIs',
-    'services.s1.desc': 'Business logic development, REST APIs, MySQL databases, and server-side architecture with PHP.',
-    'services.s2.title': 'Frontend & UI',
-    'services.s2.desc': 'Responsive and modern interfaces with HTML, CSS, JavaScript, and frameworks like Bootstrap, React, and Vue.',
-    'services.s3.title': 'Web Applications',
-    'services.s3.desc': 'Complete management systems, admin panels, platforms with authentication and complex workflows.',
-    'stack.tag': 'Technologies',
-    'stack.title': 'Stack & Tools',
-    'stack.backend': 'Backend & Database',
-    'stack.frontend': 'Frontend',
-    'stack.tools': 'Tools',
-    'stack.multimedia': 'Multimedia',
-    'stack.bonus': 'bonus',
-    'projects.tag': 'Portfolio',
-    'projects.title': 'Projects',
-    'projects.tab.personal': 'Personal Projects',
-    'projects.tab.company': 'Company Projects',
-    'projects.company.note': 'The projects here were developed in a company context.',
-    'contact.tag': 'Contact',
-    'contact.title': 'Let\'s work together',
-    'contact.desc': 'I\'m available for new projects and opportunities. Get in touch!',
-    'contact.email': 'Email',
-    'contact.linkedin': 'Professional profile',
-    'footer.rights': 'All rights reserved.'
+    'nav.cta': 'Get a proposal',
+    'hero.eyebrow': 'Websites for SMEs',
+    'hero.title': 'Your business deserves a website that brings clients, not just another page online',
+    'hero.subtitle': 'I help SMEs get a professional website that brings enquiries: clear, fast and built for mobile.',
+    'hero.cta.primary': 'Get a free proposal',
+    'hero.cta.secondary': 'See my work',
+    'hero.trust1': 'Delivery in 7 days',
+    'hero.trust2': 'No mandatory phone call',
+    'hero.trust3': 'Reply within 24h',
+    'hero.location': 'São João da Madeira',
+    'hero.exp': '+10 years of experience',
+    'hero.noteLabel': 'Who is this for?',
+    'hero.noteText': 'Local businesses and SMEs: restaurants, clinics, services, consulting, construction and retail.',
+    'trust.label': 'Some projects I have worked on',
+    'value.tag': 'Why a new website',
+    'value.title': 'Your website should work for you when you can’t pick up the phone',
+    'value.desc': 'People decide in seconds. If the site looks outdated or confusing, they move on.',
+    'value.v1.title': 'More enquiries and requests',
+    'value.v1.desc': 'Clear buttons, WhatsApp and forms in the right place, so visitors can request a quote without guessing.',
+    'value.v2.title': 'An image that builds trust',
+    'value.v2.desc': 'A clean, professional site makes your company look bigger and more reliable, even before you speak.',
+    'value.v3.title': 'Fast on mobile',
+    'value.v3.desc': 'Most decisions happen on a phone. The site loads quickly, reads well and works without hassle.',
+    'value.v4.title': 'Delivery in 7 days',
+    'value.v4.desc': 'A simple process and clear timelines. In 7 days you get the first version to review, without waiting for months.',
+    'process.tag': 'How I work',
+    'process.title': '4 steps. No jargon. No surprises.',
+    'process.desc': 'You always know where you are and what comes next.',
+    'process.s1.title': 'Quick diagnosis',
+    'process.s1.desc': 'You tell me about the business, the goal and what’s missing on the current site (or if you don’t have one yet).',
+    'process.s2.title': 'Clear proposal',
+    'process.s2.desc': 'You get scope, timeline and investment by email or WhatsApp, with no pressure.',
+    'process.s3.title': 'Design and build',
+    'process.s3.desc': 'In 7 days I deliver the first version. Then we refine what needs changing together.',
+    'process.s4.title': 'Launch',
+    'process.s4.desc': 'The site goes live, fast and ready to receive customer enquiries.',
+    'process.cta': 'I want my proposal',
+    'cases.tag': 'Work',
+    'cases.title': 'Websites built for real businesses, not to impress developers',
+    'cases.desc': 'Each project below solved a concrete need: trust, contact or sales.',
+    'cases.problem': 'The challenge',
+    'cases.outcome': 'What was done',
+    'cases.result': 'In short',
+    'cases.view': 'View website',
+    'cases.with': 'With',
+    'contact.tag': 'Free proposal',
+    'contact.title': 'Tell me about your business. I’ll reply with a proposal.',
+    'contact.desc': 'No mandatory phone call. Prefer email or WhatsApp? I adapt.',
+    'contact.point1': 'Usually replies within 24 hours',
+    'contact.point2': 'First website version in 7 days',
+    'contact.point3': 'From €500 for presentation websites',
+    'contact.point4': 'No commitment when requesting a proposal',
+    'contact.emailLabel': 'Email',
+    'contact.whatsappCta': 'Open chat',
+    'form.name': 'Name',
+    'form.company': 'Company',
+    'form.channel': 'Email or WhatsApp',
+    'form.message': 'Message',
+    'form.namePh': 'Your name',
+    'form.companyPh': 'Company name',
+    'form.channelPh': 'email@company.com or +351 912 345 678',
+    'form.messagePh': 'What do you need? For example: new site, redesign, online store...',
+    'form.submit': 'Get a free proposal',
+    'form.sending': 'Sending...',
+    'form.note': 'Your request is sent directly to my email. You can also use WhatsApp. By sending, you accept the <a href="privacidade.html">Privacy Policy</a>.',
+    'form.success': 'Request sent. I usually reply within 24 hours.',
+    'form.error': 'Please fill in all fields to continue.',
+    'form.errorSend': 'Could not send right now. Please use WhatsApp or email instead.',
+    'cookies.text': 'This site stores language preference on your device and may load fonts from Google. By continuing, you accept this use. Learn more in the <a href="privacidade.html">Privacy Policy</a>.',
+    'cookies.accept': 'Got it',
+    'cookies.more': 'View privacy',
+    'mobile.cta': 'Get a free proposal',
+    'footer.tagline': 'Websites for SMEs. São João da Madeira, Portugal.',
+    'footer.rights': 'All rights reserved.',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms and Conditions',
+    'footer.linkedin': 'LinkedIn',
+    'doc.title': 'Xavier Nabais | Websites that bring clients',
+    'doc.description': 'Xavier Nabais, São João da Madeira. Professional websites for SMEs in Portugal. From €500. Delivery in 7 days. Free proposal request.'
   }
 };
 
 let currentLang = localStorage.getItem('lang') || 'pt';
 
+function t(key) {
+  return (translations[currentLang] && translations[currentLang][key]) || translations.pt[key] || key;
+}
+
 function setLanguage(lang) {
-  currentLang = lang;
-  localStorage.setItem('lang', lang);
-  document.documentElement.lang = lang;
+  currentLang = lang === 'en' ? 'en' : 'pt';
+  localStorage.setItem('lang', currentLang);
+  document.documentElement.lang = currentLang;
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (translations[lang][key]) {
-      el.innerHTML = translations[lang][key];
-    }
+    const value = t(key);
+    if (value) el.innerHTML = value;
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    const value = t(key);
+    if (value) el.setAttribute('placeholder', value);
   });
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
+    btn.classList.toggle('active', btn.dataset.lang === currentLang);
+  });
+
+  document.title = t('doc.title');
+  const meta = document.querySelector('meta[name="description"]');
+  if (meta) meta.setAttribute('content', t('doc.description'));
+
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  const twTitle = document.querySelector('meta[name="twitter:title"]');
+  const twDesc = document.querySelector('meta[name="twitter:description"]');
+  if (ogTitle) ogTitle.setAttribute('content', t('doc.title'));
+  if (ogDesc) ogDesc.setAttribute('content', t('doc.description'));
+  if (twTitle) twTitle.setAttribute('content', t('doc.title'));
+  if (twDesc) twDesc.setAttribute('content', t('doc.description'));
+
+  renderCases();
+  renderTrustBar();
+}
+
+function localize(field) {
+  if (!field) return '';
+  if (typeof field === 'string') return field;
+  return field[currentLang] || field.pt || '';
+}
+
+function renderTrustBar() {
+  const el = document.getElementById('trustLogos');
+  if (!el || !siteData.cases) return;
+
+  const names = siteData.cases.map(c => localize(c.title));
+  el.innerHTML = names.map(name => `<span class="trust-chip">${name}</span>`).join('');
+}
+
+function renderCases() {
+  const grid = document.getElementById('casesGrid');
+  if (!grid || !siteData.cases) return;
+
+  const employer = siteData.employer;
+
+  grid.innerHTML = siteData.cases.map(project => {
+    const url = project.url && project.url !== '#' ? project.url : '';
+    const link = url
+      ? `<a class="case-link" href="${url}" target="_blank" rel="noopener">${t('cases.view')} →</a>`
+      : '';
+
+    const badge = project.company && employer
+      ? `<div class="case-badge"><span>${t('cases.with')}</span><a href="${employer.url}" target="_blank" rel="noopener"><img src="${employer.logo}" alt="${employer.name}"></a></div>`
+      : '';
+
+    return `
+      <article class="case-card">
+        <div class="case-image">
+          <img src="${project.image}" alt="${localize(project.title)}" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder-project.svg'">
+        </div>
+        <div class="case-body">
+          <p class="case-sector">${localize(project.sector)}</p>
+          <h3>${localize(project.title)}</h3>
+          ${badge}
+          <dl class="case-meta">
+            <div>
+              <dt>${t('cases.problem')}</dt>
+              <dd>${localize(project.problem)}</dd>
+            </div>
+            <div>
+              <dt>${t('cases.outcome')}</dt>
+              <dd>${localize(project.outcome)}</dd>
+            </div>
+          </dl>
+          <p class="case-result">${t('cases.result')}: ${localize(project.result)}</p>
+          ${link}
+        </div>
+      </article>
+    `;
+  }).join('');
+}
+
+function setupContactLinks() {
+  const { email, linkedin, whatsapp, name } = siteData;
+
+  document.getElementById('footerName').textContent = name;
+  document.getElementById('footerYear').textContent = String(new Date().getFullYear());
+  document.getElementById('contactEmailText').textContent = email;
+  document.getElementById('contactEmail').href = `mailto:${email}`;
+  document.getElementById('footerLinkedin').href = linkedin;
+
+  const heroImg = document.getElementById('heroImage');
+  if (heroImg) {
+    heroImg.src = siteData.heroImage;
+    heroImg.alt = name;
+  }
+
+  const wa = document.getElementById('contactWhatsapp');
+  if (whatsapp && String(whatsapp).trim()) {
+    const digits = String(whatsapp).replace(/\D/g, '');
+    const text = encodeURIComponent(
+      currentLang === 'en'
+        ? 'Hi Xavier, I would like a free website proposal for my business.'
+        : 'Olá Xavier, gostaria de pedir uma proposta grátis de website para o meu negócio.'
+    );
+    wa.href = `https://wa.me/${digits}?text=${text}`;
+    wa.classList.remove('is-hidden');
+  } else {
+    wa.classList.add('is-hidden');
+  }
+}
+
+function setupForm() {
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  if (!form) return;
+
+  const submitBtn = form.querySelector('[type="submit"]');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    status.textContent = '';
+    status.classList.remove('is-error');
+
+    const name = form.name.value.trim();
+    const company = form.company.value.trim();
+    const channel = form.channel.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !company || !channel || !message) {
+      status.textContent = t('form.error');
+      status.classList.add('is-error');
+      return;
+    }
+
+    const subject =
+      currentLang === 'en'
+        ? `Website proposal - ${company}`
+        : `Proposta de website - ${company}`;
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = t('form.sending');
+    }
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(siteData.email)}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          company,
+          channel,
+          message,
+          _subject: subject,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+
+      if (!response.ok) throw new Error('submit_failed');
+
+      const result = await response.json().catch(() => ({}));
+      if (result.success === 'false' || result.success === false) throw new Error('submit_failed');
+
+      status.textContent = t('form.success');
+      form.reset();
+    } catch (err) {
+      status.textContent = t('form.errorSend');
+      status.classList.add('is-error');
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = t('form.submit');
+      }
+    }
   });
 }
 
-function renderProjectCard(project, isCompany) {
-  const typeLabel = project.type === 'webapp' ? 'Web App' : 'Website';
-  const employer = siteData.employer;
+function setupNav() {
+  const navbar = document.getElementById('navbar');
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
 
-  const companyBadge = isCompany ? `
-    <a href="${employer.url}" target="_blank" rel="noopener" class="project-company" title="${employer.name}">
-      <img src="${employer.logo}" alt="${employer.name}">
-    </a>
-  ` : `<span class="project-type">${typeLabel}</span>`;
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
 
-  const techTags = project.tech.map(t => `<span class="tech-tag">${t}</span>`).join('');
+  navToggle.addEventListener('click', () => {
+    const open = navMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
 
-  return `
-    <article class="project-card fade-in">
-      <div class="project-image">
-        <img src="${project.image}" alt="${project.title}" onerror="this.onerror=null;this.src='images/placeholder-project.svg'">
-        <div class="project-overlay">
-          <a href="${project.url}" target="_blank" rel="noopener" class="project-link">
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      </div>
-      <div class="project-info">
-        ${companyBadge}
-        <h3>${project.title}</h3>
-        <p>${project.description}</p>
-        <div class="project-tech">${techTags}</div>
-      </div>
-    </article>
-  `;
+  document.querySelectorAll('.nav-link, .btn-nav').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      if (window.scrollY >= section.offsetTop - 120) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+    });
+  }, { passive: true });
 }
 
-function initSiteData() {
-  const { name, email, linkedin, heroImage, personalProjects, companyProjects } = siteData;
+function setupMobileCta() {
+  document.body.classList.add('has-mobile-cta');
+  const bar = document.getElementById('mobileCta');
+  const contact = document.getElementById('contact');
+  if (!bar || !contact || !('IntersectionObserver' in window)) return;
 
-  document.title = `${name} | Fullstack Developer`;
-  document.getElementById('heroName').textContent = name;
-  document.getElementById('footerName').textContent = name;
-  document.getElementById('footerYear').textContent = new Date().getFullYear();
-  document.getElementById('heroImage').src = heroImage;
-  document.getElementById('heroImage').alt = name;
-  document.getElementById('contactEmailText').textContent = email;
+  const observer = new IntersectionObserver(([entry]) => {
+    bar.style.display = entry.isIntersecting ? 'none' : '';
+  }, { threshold: 0.15 });
 
-  const totalProjects = personalProjects.length + companyProjects.length;
-  document.getElementById('projectCount').textContent = `${totalProjects}+`;
+  observer.observe(contact);
+}
 
-  const linkedinIds = ['navLinkedin', 'heroLinkedin', 'contactLinkedin', 'footerLinkedin'];
-  linkedinIds.forEach(id => { document.getElementById(id).href = linkedin; });
+function setupCookieBanner() {
+  const banner = document.getElementById('cookieBanner');
+  const accept = document.getElementById('cookieAccept');
+  if (!banner || !accept) return;
 
-  document.getElementById('contactEmail').href = `mailto:${email}`;
+  if (!localStorage.getItem('cookieNotice')) {
+    banner.classList.remove('is-hidden');
+  }
 
-  document.getElementById('personalProjects').innerHTML =
-    personalProjects.map(p => renderProjectCard(p, false)).join('');
-
-  document.getElementById('companyProjects').innerHTML =
-    companyProjects.map(p => renderProjectCard(p, true)).join('');
+  accept.addEventListener('click', () => {
+    localStorage.setItem('cookieNotice', '1');
+    banner.classList.add('is-hidden');
+  });
 }
 
 document.querySelectorAll('.lang-btn').forEach(btn => {
-  btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-});
-
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-
-const navToggle = document.getElementById('navToggle');
-const navMenu = document.getElementById('navMenu');
-navToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('open');
-});
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => navMenu.classList.remove('open'));
-});
-
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-link');
-
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(section => {
-    const top = section.offsetTop - 100;
-    if (window.scrollY >= top) current = section.getAttribute('id');
-  });
-  navLinks.forEach(link => {
-    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
-  });
-});
-
-document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.projects-panel').forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById(`tab-${btn.dataset.tab}`).classList.add('active');
+    setLanguage(btn.dataset.lang);
+    setupContactLinks();
   });
 });
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.1 });
-
-function observeElements() {
-  document.querySelectorAll('.section-header, .service-card, .project-card, .stat-card, .contact-card, .stack-category').forEach(el => {
-    el.classList.add('fade-in');
-    observer.observe(el);
-  });
-}
-
-initSiteData();
-observeElements();
+setupNav();
+setupForm();
+setupContactLinks();
+setupMobileCta();
+setupCookieBanner();
 setLanguage(currentLang);
