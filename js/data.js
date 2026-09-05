@@ -1,7 +1,7 @@
-const siteData = {
+﻿const siteData = {
   siteUrl: 'https://www.xaviernabais.pt/',
   name: 'Xavier Nabais',
-  email: 'admin@xaviernabais.pt',
+  email: 'contacto@xaviernabais.pt',
   whatsapp: '351915346913',
   linkedin: 'https://www.linkedin.com/in/xavier-nabais',
   heroImage: 'images/hero.jpg',
