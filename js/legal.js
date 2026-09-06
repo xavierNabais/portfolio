@@ -1,6 +1,6 @@
 ﻿const legalI18n = {
   pt: {
-    'legal.back': 'Voltar ao site',
+    'legal.back': 'Voltar',
     'legal.contact': 'Contacto',
     'legal.disclaimer': 'Este texto tem caráter informativo e não substitui aconselhamento jurídico.',
     'footer.tagline': 'Websites para PMEs. São João da Madeira, Portugal.',
@@ -88,7 +88,7 @@
     'terms.s12.p1': 'Para questões sobre estes termos: contacto@xaviernabais.pt'
   },
   en: {
-    'legal.back': 'Back to site',
+    'legal.back': 'Back',
     'legal.contact': 'Contact',
     'legal.disclaimer': 'This text is for information only and does not replace legal advice.',
     'footer.tagline': 'Websites for SMEs. São João da Madeira, Portugal.',
